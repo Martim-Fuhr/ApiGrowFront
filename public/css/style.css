@@ -1,0 +1,141 @@
+
+body {
+  background-color: #D3D3D3;
+}
+a:link {
+  text-decoration: none;
+}
+/* PAGINA 01 QUEM SOU HOME */
+.home1 {
+  width: 80%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-top {
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.fab {
+  color: black;
+  font-size: 25px;
+}
+
+.cardimg {
+  border: 2px solid #F4D4BB;
+}
+
+.card {
+  width: 320px;
+  height: 430px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card img {
+  border-radius: 18px;
+}
+
+/* LISTA GERAL */
+.opcao {
+  color: gray;
+  font-size: 18px;
+}
+
+.opcao:hover {
+  color: black;
+}
+
+/* CAROUSEL */
+.carousel {
+  width: 580px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.carousel img {
+  width: 560px;
+  height: 366px;
+}
+/* PAGINA 03 - CONTATO */
+
+.contato {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-control {
+  width: 500px;
+  border: 2px solid black;
+}
+
+.imgContato {
+  width: 400px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.btnEnviar {
+  width: 200px;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: 20px;
+  background-color: #58cde7;
+  border: 2px solid #58cde7;
+  border-radius: 20px;
+}
+
+.btnEnviar:hover {
+  box-shadow: 0px 0px 5px 5px #58cde7;
+}
+/* NAV*/
+nav {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+}
+  
+nav ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  position: absolute;
+}
+  
+nav ul li {
+  width: 25%;
+  float: left;
+}
+  
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Arial';
+  text-align: center;
+  background: #222;
+  display: block;
+  padding: 20px 0px;
+  border: 1px solid #222;
+}
+
+nav ul li > ul li {
+  float: left;
+  width: 100%;
+}
+
+nav ul li a:hover {
+  background: #D3D3D3;
+  color: #222;
+  border: 1px solid #222;
+}

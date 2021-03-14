@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Martim Fuhr</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+  <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <!--------- NAVBAR ------------>
+  <nav>
+    <ul>
+        <li class="nav-item"><a href="index.html">Quem sou?</a></li>
+        <li class="nav-item"><a href="index.html#projetos">Projetos Realizados</a></li>
+        <li class="nav-item"><a href="#">Contate-me!</a></li>
+        <li class="nav-item"><a href="#">Contate a Growdev!</a></li>
+    </ul>
+  </nav>
+  <!--PAGINA 01 - HOME QUEM SOU -->
+  <div class="container-fluid home1">
+    <div class="card cardimg">
+      <img class="card-img-top" src="./img/perfil.png" alt="EU">
+      <div class="card-body">
+        <h3>Quem sou?</h3>
+        <p class="card-text">Olá! Me chamo <b>Martim Rafael Führ</b>, tenho 23 anos e moro em Sapiranga-RS.</p>
+      </div>
+    </div>
+    <div class="card cardimg">
+
+      <img class="card-img-top" src="./img/contato.jpeg" alt="burro">
+      <div class="card-body">
+        <h5>Informmações pessoais:</h5>
+        <p class="card-text">Data de nascimento: 11/03/1998</p>
+        <p class="card-text">Telefone para contato: 51 995987124</p>
+        <p class="card-text">Email: martimfuhr@hotmail.com</p>
+        <a href="https://github.com/Martim-Fuhr"><i class="fab fa-github"></i></a>
+        <a href="https://cutt.ly/Whm6X0k"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+
+    <div class="card cardimg">
+      <img class="card-img-top" src="./img/conhecimentos.jpeg" alt="galo">
+      <div class="card-body">
+        <h5>Conhecimentos:</h5>
+        <p class="card-text">Atualmente tenho conhecimento em HTML, CSS, JS, ES6, Node, PostgreSQL, PHP e React</p>
+        <p class="cart-text">Além das ferramentas Webpack e sequelize.</p>
+      </div>
+    </div>
+  </div>
+    
+      <!--  CARROSSEL  -->
+    <div id="carouselSite" class="carousel slide" id="projetos" data-ride="carousel">
+      <h2 class="align-items-center">
+        Projetos já realizados!
+      </h2>
+      <ol class="carousel-indicators">
+          <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselSite" data-slide-to="1"></li>
+          <li data-target="#carouselSite" data-slide-to="2"></li>
+      </ol>
+      
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://youtu.be/Cq07MSbXK-c" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="carousel-item">
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://youtu.be/83f-4eqzpUc" allowfullscreen></iframe>
+          </div>
+      </div>
+        <div class="carousel-item">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://youtu.be/TmJdq8rVeCI" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+  <!--PAGINA 03 - CONTATO ------->
+  <div class="container-fluid contato">
+    <form>
+      <div class="row">
+        <div class="col-5">
+          <img src="./img/Screenshot_13.png" alt="contato" class="imgContato">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <label class="text">Seu nome</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <label class="text" name="comment">Escreva sua mensagem</label>
+          <textarea class="form-control" id="controlTextarea" rows="5"></textarea>
+        </div>
+      </div>
+      <input class="btnEnviar" type="button" value="Enviar">
+    </form>
+  </div>
+
+  <!-- CONTATE A GROWDEV-->
+  
+  <div class="container-fluid contato">
+    <form>
+      <div class="row">
+        <div class="col-5">
+          <img src="./img/growdev.png" alt="contato" class="imgContato">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <label class="text">Seu nome</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <label class="text">Email</label>
+          <input type="text" class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-5">
+          <label class="text">Escreva sua mensagem</label>
+          <textarea class="form-control" id="controlTextarea" rows="5"></textarea>
+        </div>
+      </div>
+      <input class="btnEnviar" type="button" value="Enviar">
+    </form>
+  </div>
+
+  <script src="./bundle.js"></script>
+  <script src="./bootstrap.min.js"></script>
+
+</body>
+
+</html>
