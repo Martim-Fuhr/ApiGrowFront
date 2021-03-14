@@ -17,9 +17,9 @@
   <nav>
     <ul>
         <li class="nav-item"><a href="index.html">Quem sou?</a></li>
-        <li class="nav-item"><a href="index.html#projetos">Projetos Realizados</a></li>
-        <li class="nav-item"><a href="#">Contate-me!</a></li>
-        <li class="nav-item"><a href="#">Contate a Growdev!</a></li>
+        <li class="nav-item"><a href="index.html#h2carro">Projetos Realizados</a></li>
+        <li class="nav-item"><a href="index.html#contateme">Contate-me!</a></li>
+        <li class="nav-item"><a href="index.html#contategrow">Contate a Growdev!</a></li>
     </ul>
   </nav>
   <!--PAGINA 01 - HOME QUEM SOU -->
@@ -55,66 +55,83 @@
   </div>
     
       <!--  CARROSSEL  -->
-    <div id="carouselSite" class="carousel slide" id="projetos" data-ride="carousel">
-      <h2 class="align-items-center">
-        Projetos já realizados!
-      </h2>
-      <ol class="carousel-indicators">
-          <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselSite" data-slide-to="1"></li>
-          <li data-target="#carouselSite" data-slide-to="2"></li>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       </ol>
       
       <div class="carousel-inner">
+        <h2 id="h2carro">Projetos Realizados!</h2>
         <div class="carousel-item active">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://youtu.be/Cq07MSbXK-c" allowfullscreen></iframe>
-            </div>
+            <iframe class="d-block w-100" width="460" height="360" src="https://www.youtube.com/embed/Cq07MSbXK-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         <div class="carousel-item">
-          <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://youtu.be/83f-4eqzpUc" allowfullscreen></iframe>
-          </div>
+          <iframe class="d-block w-100" width="460" height="360" src="https://www.youtube.com/embed/83f-4eqzpUc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
         <div class="carousel-item">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://youtu.be/TmJdq8rVeCI" allowfullscreen></iframe>
-            </div>
+           <iframe class="d-block w-100" width="460" height="360" src="https://www.youtube.com/embed/TmJdq8rVeCI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
-    <a class="carousel-control-prev" href="#carousel-example" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carousel-example" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+  </a>
 </div>
-  
   <!--PAGINA 03 - CONTATO ------->
   <div class="container-fluid contato">
     <form>
-      <div class="row">
+      <div class="row" id="contateme">
         <div class="col-5">
           <img src="./img/Screenshot_13.png" alt="contato" class="imgContato">
         </div>
       </div>
       <div class="row">
         <div class="col-5">
+          <div class="alert alert-danger d-none">
+            Preecha todos os campos corretamente.</div>
+            <div class="alert alert-success d-none" role="alert">
+              Comentário cadastrado com sucesso.</div>
           <label class="text">Seu nome</label>
-          <input type="text" class="form-control">
+          <input type="text" id="name" class="form-control">
         </div>
       </div>
       <div class="row">
         <div class="col-5">
-          <label class="text" name="comment">Escreva sua mensagem</label>
-          <textarea class="form-control" id="controlTextarea" rows="5"></textarea>
+          <label class="text">Escreva sua mensagem</label>
+          <textarea class="form-control" id="comment" rows="5"></textarea>
         </div>
       </div>
       <input class="btnEnviar" type="button" value="Enviar">
     </form>
+    <div class="exibirComentarios">
+        <a href="#">Exibir Comentários</a>
+    </div>
   </div>
+  <div class="comentarios">
+    <div class="">
+      <b>Nome: </b>     <br>
+      <b>Mensagem: </b>
+    </div>
+    <div class="">
+      <b>Nome: </b>    <br>
+      <b>Mensagem: </b>
+    </div>
+    <div class="">
+      <b>Nome: </b>    <br>
+      <b>Mensagem: </b>
+    </div>
+    <div class="">
+      <b>Nome: </b>    <br>
+      <b>Mensagem: </b>
+    </div>
+  </div>
+
 
   <!-- CONTATE A GROWDEV-->
   
@@ -126,21 +143,25 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-5">
+        <div class="col-5"  id="contategrow">
+          <div class="alert alert-danger d-none ">
+            Preecha todos os campos corretamente.</div>
+            <div class="alert alert-success d-none" role="alert">
+              Comentário cadastrado com sucesso.</div>
           <label class="text">Seu nome</label>
-          <input type="text" class="form-control">
+          <input type="text" id="name2" class="form-control">
         </div>
       </div>
       <div class="row">
         <div class="col-5">
           <label class="text">Email</label>
-          <input type="text" class="form-control">
+          <input type="text" id="email" class="form-control">
         </div>
       </div>
       <div class="row">
         <div class="col-5">
           <label class="text">Escreva sua mensagem</label>
-          <textarea class="form-control" id="controlTextarea" rows="5"></textarea>
+          <textarea class="form-control" id="comment2" rows="5"></textarea>
         </div>
       </div>
       <input class="btnEnviar" type="button" value="Enviar">
@@ -149,6 +170,16 @@
 
   <script src="./bundle.js"></script>
   <script src="./bootstrap.min.js"></script>
+  <!-- SCRIPTS PARA FAZER O CARROSEL FUNCIONAR-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 
 </body>
 

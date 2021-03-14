@@ -4,6 +4,7 @@ body {
 }
 a:link {
   text-decoration: none;
+  color: #222;
 }
 /* PAGINA 01 QUEM SOU HOME */
 .home1 {
@@ -64,6 +65,11 @@ a:link {
   height: 366px;
 }
 /* PAGINA 03 - CONTATO */
+.alert {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
 
 .contato {
   width: 100%;
@@ -96,7 +102,7 @@ a:link {
 }
 
 .btnEnviar:hover {
-  box-shadow: 0px 0px 5px 5px #58cde7;
+  box-shadow: 0px 0px 2px 1px #58cde7;
 }
 /* NAV*/
 nav {
@@ -138,4 +144,38 @@ nav ul li a:hover {
   background: #D3D3D3;
   color: #222;
   border: 1px solid #222;
+}
+
+.comentarios {
+  margin-top: -50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.exibirComentarios {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*PROJETOS REALIZADOS*/
+#h2carro {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.projetosRealizados {
+  margin-top: -50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
