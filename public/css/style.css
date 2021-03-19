@@ -148,18 +148,18 @@ nav ul li a:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 500px;
 }
 
 .cadaCard {
   background-color: white;
   display: flex;
-  height: 90px;
+  height: auto;
   justify-content: center;
   text-align: center;
   border: 2px solid black;
   border-radius: 10px;
   flex-direction: column;
+  margin-bottom: 15px;
 }
 
 footer {
