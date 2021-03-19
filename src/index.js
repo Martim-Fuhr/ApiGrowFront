@@ -1,10 +1,18 @@
 import Comment from './Comment';
-import CommentGrow from './CommentGrow';
+import Contact from './Contact';
 
-const comment = new Comment()
-comment.validation()
+const comment = new Comment();
+comment.validation();
 
-const commentGrow = new CommentGrow()
-commentGrow.validation()
+const contact = new Contact();
+contact.validation();
 
-comment.saveComment()
+comment.saveComment();
+
+comment.showComment();
+
+contact.saveContact();
+
+contact.clearData();
+
+contact.exitClear();

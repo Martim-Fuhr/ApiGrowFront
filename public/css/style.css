@@ -1,4 +1,3 @@
-
 body {
   background-color: #D3D3D3;
 }
@@ -6,105 +5,10 @@ a:link {
   text-decoration: none;
   color: #222;
 }
-/* PAGINA 01 QUEM SOU HOME */
-.home1 {
-  width: 80%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contate1 { /* CLASS DO TAMANHO DO  CONTATE-ME*/
+  width: 98% !important;
 }
-
-.card-img-top {
-  width: 300px;
-  height: 200px;
-  margin-top: 10px;
-}
-
-.fab {
-  color: black;
-  font-size: 25px;
-}
-
-.cardimg {
-  border: 2px solid #F4D4BB;
-}
-
-.card {
-  width: 320px;
-  height: 430px;
-  margin: 15px;
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-}
-
-.card img {
-  border-radius: 18px;
-}
-
-/* LISTA GERAL */
-.opcao {
-  color: gray;
-  font-size: 18px;
-}
-
-.opcao:hover {
-  color: black;
-}
-
-/* CAROUSEL */
-.carousel {
-  width: 580px;
-  margin: 0 auto;
-  padding: 15px;
-}
-
-.carousel img {
-  width: 560px;
-  height: 366px;
-}
-/* PAGINA 03 - CONTATO */
-.alert {
-  width: 500px;
-  display: flex;
-  justify-content: center;
-}
-
-.contato {
-  width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.form-control {
-  width: 500px;
-  border: 2px solid black;
-}
-
-.imgContato {
-  width: 400px;
-  margin-left: 30px;
-  margin-bottom: 40px;
-}
-
-.btnEnviar {
-  width: 200px;
-  padding: 5px;
-  margin-left: 150px;
-  margin-top: 20px;
-  background-color: #58cde7;
-  border: 2px solid #58cde7;
-  border-radius: 20px;
-}
-
-.btnEnviar:hover {
-  box-shadow: 0px 0px 2px 1px #58cde7;
-}
-/* NAV*/
+/* CODIGO DO MENU NAV */
 nav {
   width: 100%;
   position: fixed;
@@ -125,7 +29,7 @@ nav ul li {
 }
   
 nav ul li a {
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
   font-family: 'Arial';
   text-align: center;
@@ -141,41 +45,125 @@ nav ul li > ul li {
 }
 
 nav ul li a:hover {
-  background: #D3D3D3;
+  background: black;
   color: #222;
   border: 1px solid #222;
 }
-
-.comentarios {
-  margin-top: -50px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+/* ************************  */
+#alertred, #alertgreen { /*TAMANHO DOS ALERTS*/
+  width: 98%;
 }
-
-
-.exibirComentarios {
-  margin-top: 30px;
-  width: 100%;
+/* PAGINA 01 QUEM SOU HOME */
+.home1 {
+  width: 80%;
+  height: 700px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+
 }
 
-/*PROJETOS REALIZADOS*/
+.card-img-top { /*FOTOS DOS CARDS */
+  width: 300px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.fab { /*ICONE FAB*/
+  color: black;
+  font-size: 25px;
+}
+
+.card { /*CARDS DO HOME1*/
+  width: 320px;
+  height: 430px;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card img { /*CODIGO PARA DEIXAR FOTO DO CARD RESPONSIVA*/
+  width: 95%;
+  border-radius: 18px;
+}
+
+/* PAGINA 03 - CONTATO */
+.alert {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.contato { /*DEIXE SEU COMENTARIO*/
+  width: 100%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-control { 
+  width: 500px;
+  border: 2px solid black;
+}
+
+.btnEnviar {
+  width: 200px;
+  padding: 5px;
+  margin-left: 150px;
+  margin-top: 20px;
+  background-color: #58cde7;
+  border: 2px solid #58cde7;
+  border-radius: 20px;
+}
+
+.btnEnviar:hover {
+  box-shadow: 0px 0px 2px 1px #58cde7;
+}
+/* ****    CAROUSEL    *** */
+.carousel {
+  width: 580px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-bottom: 100px;
+}
+
 #h2carro {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.projetosRealizados {
-  margin-top: -50px;
-  width: 100%;
+
+/* COMENTÁRIO */
+#buscarComment {
+  width: 480px;
+  justify-content: center;
+  text-align: center;
+}
+
+.exibirComentarios {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
+  height: 500px;
+}
+
+.cadaCard {
+  background-color: white;
+  display: flex;
+  height: 90px;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
 }

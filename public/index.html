@@ -18,24 +18,27 @@
     <ul>
         <li class="nav-item"><a href="index.html">Quem sou?</a></li>
         <li class="nav-item"><a href="index.html#h2carro">Projetos Realizados</a></li>
-        <li class="nav-item"><a href="index.html#contateme">Contate-me!</a></li>
-        <li class="nav-item"><a href="index.html#contategrow">Contate a Growdev!</a></li>
+        <li class="nav-item"><a href="index.html#buscarComment">Comentários</a></li>
+        <li class="nav-item"><a href="#" data-toggle="modal" data-target="#exampleModal">Contate-me!</a></li>
     </ul>
   </nav>
+
+  
   <!--PAGINA 01 - HOME QUEM SOU -->
   <div class="container-fluid home1">
-    <div class="card cardimg">
+    
+    <div class="card">
       <img class="card-img-top" src="./img/perfil.png" alt="EU">
       <div class="card-body">
         <h3>Quem sou?</h3>
         <p class="card-text">Olá! Me chamo <b>Martim Rafael Führ</b>, tenho 23 anos e moro em Sapiranga-RS.</p>
       </div>
     </div>
-    <div class="card cardimg">
 
-      <img class="card-img-top" src="./img/contato.jpeg" alt="burro">
+    <div class="card">
+      <img class="card-img-top" src="./img/contato.jpeg" alt="contato">
       <div class="card-body">
-        <h5>Informmações pessoais:</h5>
+        <h5>Informações pessoais:</h5>
         <p class="card-text">Data de nascimento: 11/03/1998</p>
         <p class="card-text">Telefone para contato: 51 995987124</p>
         <p class="card-text">Email: martimfuhr@hotmail.com</p>
@@ -43,125 +46,131 @@
         <a href="https://cutt.ly/Whm6X0k"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-
-    <div class="card cardimg">
-      <img class="card-img-top" src="./img/conhecimentos.jpeg" alt="galo">
+  
+    <div class="card">
+      <img class="card-img-top" src="./img/conhecimentos.jpeg" alt="imagem de conhecimento">
       <div class="card-body">
         <h5>Conhecimentos:</h5>
-        <p class="card-text">Atualmente tenho conhecimento em HTML, CSS, JS, ES6, Node, PostgreSQL, PHP e React</p>
-        <p class="cart-text">Além das ferramentas Webpack e sequelize.</p>
+        <p class="card-text">Atualmente tenho conhecimento em HTML, CSS, JS, ES6, Node, PostgreSQL e React</p>
+        <p class="cart-text">Além das ferramentas Webpack, sequelize e axios.</p>
       </div>
     </div>
   </div>
     
       <!--  CARROSSEL  -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
       
-      <div class="carousel-inner">
-        <h2 id="h2carro">Projetos Realizados!</h2>
-        <div class="carousel-item active">
-            <iframe class="d-block w-100" width="460" height="360" src="https://www.youtube.com/embed/Cq07MSbXK-c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <div class="carousel-item">
-          <iframe class="d-block w-100" width="460" height="360" src="https://www.youtube.com/embed/83f-4eqzpUc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="carousel-inner">
+      <h1 id="h2carro">Projetos Realizados!</h1>
+      <div class="carousel-item active">
+        <iframe class="d-block w-100" width="550" height="450" src="https://www.youtube.com/embed/Cq07MSbXK-c" frameborder="0" allowfullscreen></iframe>
       </div>
-        <div class="carousel-item">
-           <iframe class="d-block w-100" width="460" height="360" src="https://www.youtube.com/embed/TmJdq8rVeCI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+      <div class="carousel-item">
+        <iframe class="d-block w-100" width="550" height="450" src="https://www.youtube.com/embed/83f-4eqzpUc" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="carousel-item">
+        <iframe class="d-block w-100" width="550" height="450" src="https://www.youtube.com/embed/TmJdq8rVeCI" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
+
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="carousel-control-prev-icon" ></span>
       <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
-  </a>
-</div>
+    </a>
+  </div>
   <!--PAGINA 03 - CONTATO ------->
-  <div class="container-fluid contato">
+  <div class="contato">
     <form>
-      <div class="row" id="contateme">
-        <div class="col-5">
-          <img src="./img/Screenshot_13.png" alt="contato" class="imgContato">
-        </div>
-      </div>
       <div class="row">
         <div class="col-5">
-          <div class="alert alert-danger d-none">
-            Preecha todos os campos corretamente.</div>
-            <div class="alert alert-success d-none" role="alert">
-              Comentário cadastrado com sucesso.</div>
+          <h1 id="buscarComment">Deixe seu comentário!</h1>
+          <div class="alert alert-danger d-none">Preecha todos os campos corretamente.</div>
+            <div class="alert alert-success d-none" role="alert">Comentário enviado!.</div>
           <label class="text">Seu nome</label>
           <input type="text" id="name" class="form-control">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-5">
           <label class="text">Escreva sua mensagem</label>
           <textarea class="form-control" id="comment" rows="5"></textarea>
+          <input class="btnEnviar" type="button" value="Comentar">
         </div>
       </div>
-      <input class="btnEnviar" type="button" value="Enviar">
     </form>
-    <div class="exibirComentarios">
-        <a href="#">Exibir Comentários</a>
+  </div>
+  <div class="row">
+        <div href="index.html.exibirComentarios" class="exibirComentarios">
+      </div>
+  </div>
+
+  <!-- CONTATE A GROWDEV *MODAL BUTTON-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Contate-me</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <div class="alert alert-danger d-none" id="alertred">
+                Preecha todos os campos corretamente.</div>
+                <div class="alert alert-success d-none" role="alert" id="alertgreen">
+                  Enviado!</div>
+              <label for="recipient-name" class="col-form-label">Nome:</label>
+              <input type="text" class="form-control contate1" id="name2">
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Telefone:</label>
+              <input type="number" class="form-control contate1" id="telefone" required>
+            </div>
+            <div class="form-group">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="text" class="form-control contate1" id="email">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="col-form-label">Menssagem:</label>
+              <textarea class="form-control contate1" id="comment2"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btnClear">Limpar Dados</button>
+          <button type="button" class="btn btn-secondary btnExit" data-dismiss="modal">Sair</button>
+          <button type="button" class="btn-primary btn">Enviar</button>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- CONTATE A GROWDEV-->
   
-  <div class="container-fluid contato">
-    <form>
-      <div class="row">
-        <div class="col-5">
-          <img src="./img/growdev.png" alt="contato" class="imgContato">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-5"  id="contategrow">
-          <div class="alert alert-danger d-none ">
-            Preecha todos os campos corretamente.</div>
-            <div class="alert alert-success d-none" role="alert">
-              Comentário cadastrado com sucesso.</div>
-          <label class="text">Seu nome</label>
-          <input type="text" id="name2" class="form-control">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-5">
-          <label class="text">Email</label>
-          <input type="text" id="email" class="form-control">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-5">
-          <label class="text">Escreva sua mensagem</label>
-          <textarea class="form-control" id="comment2" rows="5"></textarea>
-        </div>
-      </div>
-      <input class="btnEnviar" type="button" value="Enviar">
-    </form>
-  </div>
-
   <script src="./bundle.js"></script>
   <script src="./bootstrap.min.js"></script>
   <!-- SCRIPTS PARA FAZER O CARROSEL FUNCIONAR-->
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
     crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+<!--
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+-->
 
 </body>
+<footer class="blockquote-footer">
+  Martim Rafael Führ, ©2021
+</footer>
 
 </html>
